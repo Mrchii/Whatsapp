@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mr Chii AI</string>
+    <string name="app_title">Mr Chii AI - Android SMS</string>
+    <string name="app_subtitle">Msaidizi wa Majibu ya SMS Kiotomatiki (Swahili &amp; English)</string>
+    <string name="status_active">&#9889; MR CHII AI SMS AUTOMATION IS ACTIVE &amp; READY</string>
+    <string name="stop_kill_switch">&#128721; Emergency STOP Kill Switch</string>
+    <string name="auto_reply_master">&#9889; Auto Reply Master Switch</string>
+    <string name="android_sms_pipeline">&#128241; Android SMS Auto-Reply Pipeline</string>
+    <string name="backend_url_label">Backend Server Base URL (Gemini AI Key):</string>
+    <string name="backend_url_hint">https://your-app.run.app</string>
+    <string name="btn_save_url">Save Server URL</string>
+    <string name="btn_set_default_sms">&#128241; Set as Default SMS App (Recommended)</string>
+    <string name="btn_grant_permissions">Check &amp; Request SMS Permissions</string>
+    <string name="btn_open_app_settings">&#128275; Open App Info (Fix "Restricted Setting")</string>
+    <string name="infinix_restricted_notice">&#128161; Android 14 / Infinix Permission Guide:\nIf SMS Permission is grayed out or shows "Restricted setting":\n1. Tap "Open App Info" button above.\n2. Tap 3 dots (top right menu) > "Allow restricted settings".\n3. Return here and tap "Set as Default SMS App".</string>
+    <string name="monitor_title">&#128202; SMS Auto Reply Live Monitor</string>
+    <string name="btn_refresh_logs">&#128257; Refresh</string>
+    <string name="btn_clear_logs">&#128465; Clear Logs</string>
+    <string name="empty_logs_text">No SMS auto-reply events logged yet. Incoming SMS activity will appear here in real time.</string>
+</resources>

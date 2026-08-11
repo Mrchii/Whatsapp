@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A">
+
+    <!-- Primary Mr Chii AI Full React App UI Container -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Optional Native Android System Monitor Panel (Hidden by default, toggleable via header button) -->
+    <ScrollView
+        android:id="@+id/nativeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8FAFC"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCloseNativeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="← Rudi kwenye Mr Chii App"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#059669" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_title"
+                android:textColor="#0F172A"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_subtitle"
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="@string/status_active"
+                android:textColor="#059669"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchEmergencyStop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/stop_kill_switch"
+                android:textColor="#DC2626"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchAutoReply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:checked="true"
+                android:text="@string/auto_reply_master"
+                android:textColor="#0F172A"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchAndroidSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:checked="true"
+                android:text="@string/android_sms_pipeline"
+                android:textColor="#0F172A"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/backend_url_label"
+                android:textColor="#0F172A"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etBackendUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#FFFFFF"
+                android:hint="@string/backend_url_hint"
+                android:inputType="textUri"
+                android:padding="12dp"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnSaveUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_save_url"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary_green" />
+
+            <Button
+                android:id="@+id/btnSetDefaultSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/btn_set_default_sms"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary_green" />
+
+            <Button
+                android:id="@+id/btnGrantPermissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_grant_permissions"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_slate" />
+
+            <Button
+                android:id="@+id/btnOpenAppSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_open_app_settings"
+                android:textColor="@color/white"
+                android:backgroundTint="#2563EB" />
+
+            <TextView
+                android:id="@+id/tvRestrictedNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#EFF6FF"
+                android:padding="12dp"
+                android:text="@string/infinix_restricted_notice"
+                android:textColor="#1E40AF"
+                android:textSize="12sp" />
+
+            <!-- SMS Auto Reply Live Monitor Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/monitor_title"
+                        android:textColor="#0F172A"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnRefreshLogs"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_refresh_logs"
+                        android:textColor="#0284C7"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnClearLogs"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_clear_logs"
+                        android:textColor="#DC2626"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMonitorPipelineStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#F1F5F9"
+                    android:padding="10dp"
+                    android:text="Pipeline Status: Checking..."
+                    android:textColor="#334155"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSmsLogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="12dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/tvEmptyLogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/empty_logs_text"
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
